@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pedido</h1>
+    <!---------------------------------
+    ---------------------------------->
+    <h3>Empanadas</h3>
+    <%  if (pedido.pago.empanada.carne > 0){ %>
+        <p><%= pedido.pago.empanada.carne %> Carne </p>
+    <% } %>
+    <%  if (pedido.pago.empanada.chorizo > 0){ %>
+        <p><%= pedido.pago.empanada.chorizo %> Chorizo</p>
+    <% } %>
+    <%  if (pedido.pago.empanada.chistorra > 0){ %>
+        <p><%= pedido.pago.empanada.chistorra %> Chistorra</p>
+    <% } %>
+    <%  if (pedido.pago.empanada.hawaiana > 0){ %>
+        <p><%= pedido.pago.empanada.hawaiana %> Hawaiana</p>
+    <% } %>
+    <%  if (pedido.pago.empanada.ate > 0){ %>
+        <p><%= pedido.pago.empanada.ate %> Ate</p>
+    <% } %>
+    <%  if (pedido.pago.empanada.elote > 0){ %>
+        <p><%= pedido.pago.empanada.elote %> Elote</p>
+    <% } %>
+    <!---------------------------------
+    ---------------------------------->
+    <h3>Cortes</h3>
+    <%  if (pedido.pago.cortes.arrachera > 0){ %>
+        <p><%= pedido.pago.cortes.arrachera %> Arrachera</p>
+    <% } %>
+    <%  if (pedido.pago.cortes.bifeChorrizo > 0){ %>
+        <p><%= pedido.pago.cortes.bifeChorrizo %> Bife Chorrizo</p>
+    <% } %>
+    <!---------------------------------
+    ---------------------------------->
+    <h3>Cortes Top</h3>
+    <%  if (pedido.pago.cortesTop.ribEye > 0){ %>
+        <p><%= pedido.pago.cortesTop.ribEye %> Rib Eye</p>
+    <% } %>
+    <%  if (pedido.pago.cortesTop.tBone > 0){ %>
+        <p><%= pedido.pago.cortesTop.tBone %> T Bone</p>
+    <% } %>
+      <!---------------------------------
+    ---------------------------------->
+    <h3>Con Pan</h3>
+    <%  if (pedido.pago.conPan.choripan > 0){ %>
+        <p><%= pedido.pago.conPan.choripan %> Choripan</p>
+    <% } %> 
+    <%  if (pedido.pago.conPan.chistorrapan > 0){ %>
+        <p><%= pedido.pago.conPan.chistorrapan %> Chistorrapan</p>
+    <% } %>
+    <!---------------------------------
+  ---------------------------------->
+  <h3>Papas</h3>
+  <%  if (pedido.pago.papas.secillas > 0){ %>
+      <p><%= pedido.pago.papas.secillas %> Sencillas</p>
+  <% } %> 
+  <%  if (pedido.pago.papas.chorizo > 0){ %>
+      <p><%= pedido.pago.papas.chorizo %> Chorizo</p>
+  <% } %>
+  <%  if (pedido.pago.papas.chistorra > 0){ %>
+      <p><%= pedido.pago.papas.chistorra %> Chistorra</p>
+  <% } %> 
+  <%  if (pedido.pago.papas.arrachera > 0){ %>
+      <p><%= pedido.pago.papas.arrachera %> Arrachera</p>
+  <% } %>
+    
+</body>
+</html>

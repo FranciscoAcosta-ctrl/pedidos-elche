@@ -4,7 +4,7 @@ const path = require('path')
 const db = require('./db');
 
 
-app.use(express.static('/assets'));
+app.use(express.static(__dirname+'/assets'));
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended:true}));
