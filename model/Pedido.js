@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const pedidoSchema = new Schema({
+    idFacebook: String,
     pago: { 
         empanada: {
             carne: Number,
@@ -21,7 +22,7 @@ const pedidoSchema = new Schema({
         },
         conPan: {
             choripan: Number,
-            torrapan: Number,
+            chistorrapan: Number,
         },
         papas: {
             secillas: Number,
